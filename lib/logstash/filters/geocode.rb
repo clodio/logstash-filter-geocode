@@ -12,12 +12,12 @@ class LogStash::Filters::Example < LogStash::Filters::Base
   # configure this filter from your Logstash config.
   #
   # filter {
-  #   example {
+  #   geocode {
   #     message => "My message..."
   #   }
   # }
   #
-  config_name "example"
+  config_name "geocode"
 
   # Replace the message with this value.
   config :message, :validate => :string, :default => "Hello World!"
